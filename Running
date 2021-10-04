@@ -1,0 +1,26 @@
+# This program calculates the sum of a series
+# of numbers entered by the user.
+
+max = 2   # The maximum number
+
+# Initialize an accumulator variable.
+total = 0.0
+   
+# Explain what we are doing.
+print('This program calculates the sum of')
+print(max, 'numbers you will enter.')
+
+# Get the numbers and accumulate them.
+for counter in range(max):
+    number = int(input('Enter a number: '))
+    total = total + number
+
+# Display the total of the numbers.
+print('The total is', total)
+
+
+##When the loop finishes, the accumulator will contain the total of the numbers that were
+##read by the loop. Notice that the first step in the flowchart is to set the accumulator variable to 0.
+##This is a critical step. Each time the loop reads a number, it adds it to the accumulator.
+##If the accumulator starts with any value other than 0, it will not contain the correct total
+##when the loop finishes.
