@@ -1,0 +1,6 @@
+sum = 0
+data = int(input("Please enter data for summatory ( PLEASE ENTER 0 to end) "))
+while data != 0:
+    sum = sum + data
+    data = int(input("Please Enter Data for SUM values (enter 0 to end) "))
+print("Sumatory:",sum)
