@@ -1,0 +1,17 @@
+def saySomething(thisIsaParameter):
+        print(thisIsaParameter)
+
+#function call
+saySomething("This Is An Argument. First Call")
+saySomething("This Is An Argument again invoking the respective fuction, second call")
+
+
+
+# a nice example here->
+def mainExample():
+        course =250
+        subj ="ITS"
+        #more =" the best class ever @ Campbell"
+        print (subj, course)
+
+mainExample()
