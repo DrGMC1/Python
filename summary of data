@@ -1,0 +1,89 @@
+owner<- read.csv(file.choose())
+
+# summary of data
+summary(owner)
+
+# install MASS package, if it is already not available
+# load library MAS for lda
+library("MASS")
+
+# check possibility of linear discrimination
+# color as per the outcome variable
+plot(owner[,c(1,2)], col=owner[,3])
+
+
+# checking LDA
+# Note - CV=TRUE leaves the data for cross validation
+# which can have little more impact on accuracy of
+# LDA model in very small size data
+
+# Note CV=TRUE generates jacknifed (i.e., leave one out) predictions
+str(owner)
+fit <- lda(Owners_True ~ .,
+           data=owner,
+           na.action="na.omit", CV=TRUE)
+# show results
+fit
+
+# Assess the accuracy of the prediction
+# percent correct for each category of outcome
+table(owner$Owners_True)
+table(fit$class)
+table(owner$Owners_True, fit$class)
+
+accr <- table(owner$Owners_True, fit$class)
+
+diag(prop.table(accr, 1))
+
+# total percent correct
+sum(diag(prop.table(accr)))
+
+
+# Another method of checking model accuracy
+# This time we are taking complete data for
+# all observations
+owner_1<- owner
+owner_1$predicted_outcome <-predict(lda(Owners_True ~ .,
+                                        data=owner))$class
+
+table(owner_1$Owners_True, owner_1$predicted_outcome)
+
+# Understand model
+fit<-lda(Owners_True ~ .,
+    data=owner)
+fit
+
+# component by component
+fit$prior # gives prior probability
+
+fit$counts # gives count of each class
+
+fit$means # gives averages of each variable for each class
+
+fit$scaling # the linear combination coefficients (scaling) 
+            # for each linear discriminant 
+
+fit$svd #SVD gives the ratio of the between- and within-group 
+# standard deviations on the linear discriminant variables
+
+
+# Understand the working on LDA
+owner_2 <-data.frame(predict(lda(Owners_True ~ .,
+                                        data=owner)))
+owner_2
+
+owner_3 <- cbind(owner, owner_2)
+
+
+# Visualize the LDA
+plot(fit)
+# Understand number of bars for both category
+# understand error
+
+# Exploratory Graph for LDA 
+library(klaR)
+partimat(Owners_True ~ .,
+         data=owner,method="lda")
+# Understand linear discrimnant line
+# Understand threshold line
+# Understand why different color for some points
