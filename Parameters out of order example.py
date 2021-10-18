@@ -1,5 +1,4 @@
-# This program demonstrates passing two string
-# arguments to a function.10/13
+#Parameters Out-of-Order (#2-10-18)
 
 def main():
     first_name = input('Enter your first name ITS 250 student: ')
