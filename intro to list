@@ -1,0 +1,22 @@
+##num1 = int(input("Please enter a number: "))
+##num2 = int(input("Please enter a number: "))
+##num3 = int(input("Please enter a number: "))
+##print((num1 + num2 + num3) / 3)
+
+
+names = ['Molly', 'Steven', 'Will', 'Alicia', 'Adriana']
+info = ['Alicia', 27, 1550.87]
+
+print(names)
+print(info)
+
+numbers = [5, 10, 15, 20]
+numbers.append("anyting")
+
+print(numbers)
+
+
+roster = ["Adam", "Alice", "Andy", "Ariel"]
+roster.remove("Adam")
+
+print(roster)
