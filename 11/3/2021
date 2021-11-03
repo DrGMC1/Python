@@ -1,0 +1,158 @@
+####num1 = int(input("Please enter a number: "))
+####num2 = int(input("Please enter a number: "))
+####num3 = int(input("Please enter a number: "))
+####print((num1 + num2 + num3) / 3)
+##
+##
+##names = ['Molly', 'Steven', 'Will', 'Alicia', 'Adriana']
+##info = ['Alicia', 27, 1550.87]
+##
+##print(names)
+##print(info)
+##
+##numbers = [5, 10, 15, 20]
+##numbers.append("anyting")
+##
+##print(numbers)
+
+
+##roster = ["Adam", "Alice", "Andy", "Ariel"]
+###roster.append("Michael")
+###roster.append("Becky")
+##roster.extend(["Caren", "Rose"])
+##roster.remove("Adam")
+#####roster.remove("Bob")    
+##print(roster)
+
+
+##newList = []
+##print (newlist)
+
+
+###help ("list")
+##
+##
+####---------Repetition operator and  iterating over a list------
+##numbers01 = [0] * 5
+##print(numbers01)
+##
+##numbers001 = [1, 2, 3] * 3
+##print(numbers001)
+##
+##words = ["anaa", "jhj", "jkhdfjh"] * 3
+##print(words)
+##
+##
+####---------- You can iterate over a list using a for loop
+##myNumber = [10,100,2015,258,147]
+##for n in myNumber:
+##    print(n)
+
+##------------Indexing------------#
+##
+##myList4 = [1, 3, 5]
+##
+##words5  = ["Hello", "to", "you"]
+##
+##print(words5[0])
+##print(words5[-1])
+##
+###---- the len function-----------#
+##dogs = ["Lacey", "Kieran", "Al", "anaa", "jhj", "jkhdfjh",
+##        "anaa", "jhj", "jkhdfjh", "anaa", "jhj", "jkhdfjh"
+##        "anaa", "jhj", "jkhdfjh","anaa", "jhj", "jkhdfjh"
+##        "anaa", "jhj", "jkhdfjh", "anaa", "jhj", ]
+##print(len(dogs))
+##
+##
+###------Concatenating List Examples---- 
+##list1 = [1, 2, 3, 4]
+##list2 = [5, 6, 7, 8]
+##list3 = list1 + list2
+##print(list3)
+##
+##a = ['Joanne', 'Karen', 'Lori']
+##b = ['Jenny', 'Kelly']
+##b += a
+##print (b)
+##
+####-----List Slicing------
+##days = ['Sunday', 'Monday', 'Tuesday', "Wednesday", "Thursday","Friday", "Saturday"]
+###mid_days = days[2:5]
+###mid_days = days[2:]
+##mid_days = days[:]
+##print (mid_days)
+##
+##
+######-----------------
+####
+####hounds = ["Boxer", "Chihuahua", "German Shepper", "Rottweiler"]
+####
+####guess = input("Please enter a dog: ")
+####while guess not in hounds:
+####    print("You guessed wrong!")
+####    guess = input("Guess again: ")
+
+
+# Add additional numbers to the list
+primes = [2, 3]
+primes.append(5)
+primes.append(7)
+primes.append(11)
+print (primes)
+
+
+primes.extend([5, 7, 11])
+
+
+#------- Insert(index, item) method-------------
+superheroes = ['Dr.Munoz', 'Batman', 'Robin']
+superheroes.insert(1, 'Superman')
+print (superheroes)
+
+
+#------reverse method---------------------------------------
+superheroes = ["Black Panter", 'Dr.Munoz', 'Batman', 'Robin']
+superheroes.reverse()
+print (superheroes)
+
+#------ sort()--------------------------------
+superheroes = ['Dr.Munoz', 'Batman', 'Robin']
+superheroes.sort()
+print (superheroes)
+
+
+#--------del statement------------------------
+my_list = [1, 2, 3, 4, 5]
+print('Before deletion:', my_list)
+del my_list[2]
+print('After deletion:', my_list)
+
+
+#-------min and max functions-------------------
+my_list = [5, 4, -3, 0, 50, 40, 300001]
+print('The lowest value is', min(my_list))
+print('The max value is', max(my_list))
+
+#---------copying list--------------------------
+# Create a list.
+list1 = [1, 2, 3, 4,99,848,12,746,23,44,566,10]
+# Assign the list to the list2 variable.
+list2 = list1
+print("this is list 2" , list2)
+print("this is list 1" , list1)
+
+#-------------Two dimensional list------
+
+students22 = [['Joe', 'Kim'], 
+            ['Sam', 'Sue'], 
+            ['Kelly', 'Chris']]
+#print(students)
+#print(students[0])
+#print(students[1])
+print(students22[0])
+
+
+
+
+
