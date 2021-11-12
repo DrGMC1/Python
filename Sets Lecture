@@ -1,0 +1,49 @@
+# empty set
+emptySet = set()
+print (emptySet)
+
+# set with an argument
+myset = set (['a', 'b', 'c'])
+myset = set (['one', 'two', 'five'])
+print (myset)
+
+
+# If argument is a string
+x = set ('Dr. Munoz is my favorite professor')
+print (x)
+
+
+# Sets cannot contain duplicate elements
+y = set ('aaaaaaa1111111bbbbbbbccccccWWWW')
+print (y)
+
+
+#Elements in a Set
+myset = set([1, 2, 3, 4, 5])
+print(len(myset))
+
+
+# Adding and Removing Elements
+myset1 = set() 
+myset1.add(1)
+myset1.add(2)
+myset1.add(3)
+myset1.add(4)
+myset1.add(0)
+myset1.add(100)
+print(myset1)
+
+# Adding as group
+x1 = set([1, 2, 3]) 
+x1.update([400, 565, 6521, 56])
+print(x1)
+
+# Removing method
+myset5 = set([100, 2, 3, 4, 5])
+myset5.remove(100)
+print(myset5)
+
+# discard method
+myset9 = set([1, 2, 3, 4, 5])
+myset9.discard(1000)
+print(myset9)
