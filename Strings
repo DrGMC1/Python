@@ -1,0 +1,72 @@
+#example 1
+first_name = 'Satya'
+last_name = "Nadella"
+job = 'CEO Microsoft'
+full_description = first_name + ' ' + last_name + ',' + job
+print(full_description)
+
+#example 2 (position 0 to 2 (not included)
+greet = "Hello Bob"
+print(greet [0:2])
+
+# example 3- substring
+full_name = 'Patty Lynn Smith'
+middle_name = full_name[6:10]
+print(full_name[6:10])
+#print(full_name[-6:])
+
+# example 4
+letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+print(letters[0:26:2])
+
+# example 5 searching and manipulating "in" case 
+x = "my favory professor Dr. Lecter"
+if "Munoz" in x:
+    print ( "yes he is")
+else: 
+    print("nope")
+
+# example 5 searching and manipulating "not in"
+
+x1 = "my favory professor Dr. Lecter"
+if "Munoz" not in x1:
+    print ( "Dr. Munoz was not found")
+else: 
+    print("Dr. Munoz was found")
+
+#example 6 -string methods 
+txt = "2020"
+x = txt.isalnum()
+print(x)
+
+#example 7- string method
+txt = "MUNOZ CORNEJO"
+x = txt.islower()
+print(x)
+
+#example 8- string method
+txt = "MUNOZ CORNEJO"
+x = txt.lower()
+print(x)
+
+# example 9
+website = 'https://www.programiz.com'
+print(website.lstrip('htps:/.' ))
+
+# example 10
+txt = "DR. MUNOZ-CORNEJO"
+x = txt.isupper()
+print(x)
+
+# example 11-method returns True if the string ends with the specified value
+
+txt = "Hello, ITS 250, we are the best"
+x = txt.endswith("Best")
+print(x)
+
+
+
+
+
+
+
